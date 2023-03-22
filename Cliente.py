@@ -56,3 +56,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as TCPClientSocket:
     min = int(seg/60)
     segf = seg - (min*60)
     print("El juego duró:",min,"min",segf,"seg")
+    TCPClientSocket.close()
